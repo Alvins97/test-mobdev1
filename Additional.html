@@ -1,0 +1,89 @@
+<!DOCTYOE html>
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel=stylesheet href= jquery.mobile-1.4.5.css />
+	<script src= jquery.js></script>
+	<script src= jquery.mobile-1.4.5.js></script>
+<style>
+
+</style>	
+
+<script>
+
+$( document ).on( "click", ".show-page-loading-msg", function() {
+    var $this = $( this ),
+        theme = $this.jqmData( "theme" ) || $.mobile.loader.prototype.options.theme,
+        msgText = $this.jqmData( "msgtext" ) || $.mobile.loader.prototype.options.text,
+        textVisible = $this.jqmData( "textvisible" ) || $.mobile.loader.prototype.options.textVisible,
+        textonly = !!$this.jqmData( "textonly" );
+        html = $this.jqmData( "html" ) || "";
+    $.mobile.loading( "show", {
+            text: msgText,
+            textVisible: textVisible,
+            theme: theme,
+            textonly: textonly,
+            html: html
+    });
+});
+		
+</script>
+
+</head>
+
+<body>
+
+
+ <div id="four" class="additional">
+				<h1>Page Under Construction, Sorry for inconvecience</h1>
+				<div data-role="collapsible">
+						<h2>Food List</h2>
+					<ul data-role="listview" data-inset="true">
+						<li><a href="#">Fried Rice</a></li>
+						<li><a href="#">Noodle</a></li>
+					</ul>
+				</div>
+				<div data-role="collapsible">
+						<h2>Fruit</h2>
+					<ul data-role="listview" data-inset="true">
+						<li><a href="#">Banana</a></li>
+						<li><a href="#">Apple</a></li>
+					</ul>
+				</div>
+				
+				<div data-role="content">
+                <label>Slider:</label>
+				<input type="range" id="red" min="0" max="255" value="0" ><br>
+				<input type="range" id="green" min="0" max="255" value="0" ><br>
+				<input type="range" id="blue" min="0" max="255" value="0" ><br>
+				
+				</div>
+				
+				<div data-role="panel" id="overlayPanel" data-display="overlay"> 
+				<button class="show-page-loading-msg" data-textonly="true" data-textvisible="true" data-msgtext="Loading" data-inline="true">Click Here</button>
+				
+				</div> 
+					<a href="#overlayPanel" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Button for left pop Up</a>
+					
+				<div class="responsive_grid">
+				   
+				    <div class="ui-block-a">
+				        <div class="ui-body ui-body-d">
+				            <h2>Apple Pic</h2>
+				            <p>This is place for apple picture</p>
+				        </div>
+				    </div>
+				    
+				    <div class="ui-block-b">
+				        <div class="ui-body ui-body-d">
+				            <h2>Fried Rice Pic</h2>
+				            <p>This is place for fried rice picture</p>
+				        </div>
+				    </div>
+				
+				</div>
+</div>
+<a href="C:\Users\SI\Downloads\Test Mobdev\Persiapan Mobdev\FormatJqueryMovbile\Ulangan_Mobdev.html" >Kembali Ke Halaman Utama (absolute path, error jika pindah komputer)</a>
+</body>
+</html>
