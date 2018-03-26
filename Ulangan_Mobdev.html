@@ -1,0 +1,60 @@
+<!DOCTYOE html>
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel=stylesheet href= jquery.mobile-1.4.5.css />
+	<script src= jquery.js></script>
+	<script src= jquery.mobile-1.4.5.js></script>
+<style>
+
+
+</style>	
+
+<script>
+
+$(function(){
+      // bind change event to select
+      $('#dynamic_select').on('change', function () {
+          var url = $(this).val(); // get selected value
+          if (url) { // require a URL
+              window.location = url; // redirect
+          }
+          return false;
+      });
+    });
+ 
+
+	
+
+		
+</script>
+
+</head>
+
+<body>
+
+	<div data-role="content">
+				
+		<div>
+	
+		      <select id="dynamic_select">
+				  <option value="" selected>Pilih Halaman</option>
+				  <option value="calculator.html">Calculator</option>
+				  <option value="CekWarna.html">Cek Warna</option>
+				  <option value="Rangkuman.html">Rangkuman</option>
+				  <option value="Additional.html">Tambahan</option>
+				</select> 
+			  
+			  
+		</div>
+		
+		
+		
+				
+	</div>	
+
+
+				
+</body>
+</html>
