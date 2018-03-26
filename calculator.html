@@ -1,0 +1,46 @@
+<!DOCTYOE html>
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel=stylesheet href= jquery.mobile-1.4.5.css />
+	<script src= jquery.js></script>
+	<script src= jquery.mobile-1.4.5.js></script>
+<style>
+
+</style>	
+
+<script>
+
+function convert() {
+	console.log('test');
+    	var convert = document.getElementById("basic").value;
+    	 
+		 if (convert < 0) {
+			convert = 0xFFFFFFFF + n + 1;
+			} 
+			
+		document.getElementById("binary").innerHTML = parseInt(convert, 10).toString(2);	
+		document.getElementById("hexa").innerHTML  = parseInt(convert, 10).toString(16);
+ };
+
+		
+</script>
+
+</head>
+
+<body>
+
+
+<div id="one" class="calculator">
+				<input type="text" name="name" id="basic" onchange="convert()">
+					<div id="binary"><p>binary result</p></div>
+					<div id="hexa"><p>hexa result</p></div>
+					
+<a href="C:\Users\SI\Downloads\Test Mobdev\Persiapan Mobdev\FormatJqueryMovbile\Ulangan_Mobdev.html" >Kembali Ke Halaman Utama (absolute path, error jika pindah komputer)</a>
+</div>  
+
+
+
+</body>
+</html>
