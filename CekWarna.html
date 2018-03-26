@@ -1,0 +1,44 @@
+<!DOCTYOE html>
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel=stylesheet href= jquery.mobile-1.4.5.css />
+	<script src= jquery.js></script>
+	<script src= jquery.mobile-1.4.5.js></script>
+<style>
+
+</style>	
+
+<script>
+
+function warna() {
+	console.log("test");
+    	var red = document.getElementById("red").value;
+    	var green = document.getElementById("green").value;
+    	var blue = document.getElementById("blue").value;
+    	//document.getElementById("bg").innerHTML = "<p style=\"background-color: rgb("+red+","+green+","+blue+");\"></p>";
+		//document.getElementById("bg").innerHTML = "<p style=\"background-color:"+red+";\"></p>";
+		document.getElementById("warna").innerHTML = "rgb("+red+","+green+","+blue+")";	
+};
+		
+</script>
+
+</head>
+
+<body>
+
+
+ <div id="two" class="warna" >
+				<div data-role="content">
+					<label>Input Angka Untuk mengetahui warna:</label>
+					<input type="text" id="red" value="0" onchange="warna()"><br>
+					<input type="text" id="green" value="0" onchange="warna()"><br>
+					<input type="text" id="blue" value="0" onchange="warna()"><br>
+					<div id="warna"><p>hasil warna</p></div>
+				</div>
+				 
+</div>
+<a href="C:\Users\SI\Downloads\Test Mobdev\Persiapan Mobdev\FormatJqueryMovbile\Ulangan_Mobdev.html" >Kembali Ke Halaman Utama (absolute path, error jika pindah komputer)</a>
+</body>
+</html>
